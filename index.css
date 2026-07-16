@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images/ChatGPT\ Image\ 16\ de\ jul.\ de\ 2026\,\ 11_35_44.png);
+    background-size: cover;
+}
+
+
+header {
+    background-image: url(images/ChatGPT\ Image\ 16\ de\ jul.\ de\ 2026\,\ 11_39_51.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 160px;
+    position: fixed;
+    width: 100%;
+    margin-top: -30px;
+    transition: 0.5s ease-in-out;
+    z-index: 999;
+}
+
+header:hover{
+    transform: translateY(30px);
+}
+.header-container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-inline: 100px;
+    padding-top: 30px;
+    height: 100px;
+}
+
+
+header img{
+    height: 50px;
+}
+
+header ul nav li{
+    list-style: none;
+}
+
+header ul nav li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding-inline: 20px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+header ul nav li a:hover{
+    color: rgb(6, 164, 212);
+}
+
+.hero{
+    display: flex;
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,1) 75%,
+        rgba(0,0,0,0) 100%
+    );
+}
+
+
+.video-fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero .elements{
+    margin-inline: 70px;
+    margin-top: 0px;
+    z-index: 2;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.hero .elements .element:has(.img-central) {
+    width: auto;  
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero .elements .element{
+    width: 340px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .elements .element .img-central {
+    display: fixed;
+    max-height: 120vh;   
+    width: auto;        
+    margin: 0 auto;     
+    object-fit: contain;
+}
+
+.hero .elements .element .img-logo{
+    height: 270px;
+    width: 250px;
+}
+
+.element button{
+    background-image: url(images/backgroundbutton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    width: 200px;
+    height: 60px;             
+    background-color: transparent;
+    color: black;
+    font-family: "alice";
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out ;
+    border-radius: 2px;
+}
+
+.element button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 10);
+}
+
+.element h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: "alice";
+    text-align: left;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+.element h3{
+    color: white;
+    text-transform: uppercase;
+    font-family: "alice";
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+.element p{
+    color: white;
+    font-family: "noto sans";
+    text-align: left;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.about{
+    margin: 100px;
+    text-align: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+.about:hover{
+     img{
+        transform: scale(0.9);
+     }
+
+     p{
+        transform: scale(1.1);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+     }
+}
+
+.about .content {
+    display: flex;
+}
+
+.about .content .text{
+    text-align: left;
+}
+
+.about .content .text h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: "alice";
+    text-align: left;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.about .content .text p{
+    color: white;
+    font-family: "noto sans";
+    text-align: left;
+    font-size: 14px;
+    font-weight: 200;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: 0.5s ease-in-out;
+}
+
+
+.about .content .img img{
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,1) 75%,
+        rgba(0,0,0,0) 100%
+    );
+    height: 550px;
+    transition: 0.5s ease-in-out;
+}
