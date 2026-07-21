@@ -12,3 +12,23 @@ const observer = new IntersectionObserver((entries) => {
 );
 
 sections.forEach(section => observer.observe(section));
+
+
+function mostrarHistoria(id){
+        
+        document.querySelectorAll('.story-box').forEach(box => {
+            box.classList.remove('active');
+        });
+ 
+    
+        const bloco = document.getElementById('story-' + id);
+        if(bloco) bloco.classList.add('active');
+ 
+        document.getElementById('charactersGrid').classList.add('hidden');
+        document.getElementById('characterStory').classList.add('active');
+    }
+ 
+    function voltarPersonagens(){
+        document.getElementById('charactersGrid').classList.remove('hidden');
+        document.getElementById('characterStory').classList.remove('active');
+    };
