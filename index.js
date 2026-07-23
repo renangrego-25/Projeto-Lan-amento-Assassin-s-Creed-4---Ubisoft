@@ -23,12 +23,15 @@ function mostrarHistoria(id){
     
         const bloco = document.getElementById('story-' + id);
         if(bloco) bloco.classList.add('active');
+        
  
-        document.getElementById('charactersGrid').classList.add('hidden');
+        document.getElementById('characters').classList.add('hidden');
         document.getElementById('characterStory').classList.add('active');
     }
+
+    
  
     function voltarPersonagens(){
-        document.getElementById('charactersGrid').classList.remove('hidden');
+        document.getElementById('characters').classList.remove('hidden');
         document.getElementById('characterStory').classList.remove('active');
     };

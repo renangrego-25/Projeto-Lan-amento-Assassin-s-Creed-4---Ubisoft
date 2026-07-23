@@ -18,8 +18,8 @@
                         <a href="">sobre o jogo</a>
                         <a href="">história</a>
                         <a href="">personagens</a>
+                        <a href="">visual</a>
                         <a href="">colecionáveis</a>
-                        <a href="">locais</a>
                         <a href="">adquira já</a>
                     </li>
                 </nav>
@@ -51,7 +51,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="COMPRAR">
         <div class="content">
             <div class="text">
                 <h1>sobre o jogo</h1>
@@ -75,36 +75,36 @@
         </div>
     </section>
 
-    <section class="characters">
+    <section class="characters" id="characters">
         <h1>personagens</h1>
         <p>Conheça os principais personagens que é possível encontrar em Black Flag Resynced.</p>
         <div class="card">
             <div class="person">
-                <img src="/images/1.png" alt="">
+                <img src="images/1.png" alt="">
                 <div class="text">
                     <p>Edward Kenway</p>
-                    <button onclick="mostrarHistoria('.edward')">ver no animus</button>
+                    <button onclick="mostrarHistoria('edward')">ver no animus</button>
                 </div>
             </div>
             <div class="person">
-                <img src="/images/2.png" alt="">
+                <img src="images/2.png" alt="">
                 <div class="text">
                     <p>Edward Thatch</p>
-                    <button>ver no animus</button>
+                    <button onclick="mostrarHistoria('thatch')">ver no animus</button>
                 </div>
             </div>
             <div class="person">
-                <img src="/images/3.png" alt="">
+                <img src="images/3.png" alt="">
                 <div class="text">
                     <p>James Kidd</p>
-                    <button>ver no animus</button>
+                    <button onclick="mostrarHistoria('kidd')">ver no animus</button>
                 </div>
             </div>
             <div class="person">
-                <img src="/images/4.png" alt="">
+                <img src="images/4.png" alt="">
                 <div class="text">
                     <p>Adewale</p>
-                    <button>ver no animus</button>
+                    <button onclick="mostrarHistoria('adewale')">ver no animus</button>
                 </div>
             </div>
         </div>
@@ -114,6 +114,14 @@
     <button class="voltar" onclick="voltarPersonagens()">&larr; Voltar</button>
  
     <div class="story-box" id="story-edward">
+        <img src="images/EK.png" alt="Edward Kenway">
+        <div class="text">
+            <h2>Edward Kenway</h2>
+            <p>Nascido em Swansea, filho de fazendeiros, Edward mudou-se para Bristol ainda criança. Com espírito rebelde e grande ambição de riqueza, casou-se com Caroline Scott e tornou-se corsário na esperança de dar uma vida melhor à sua família.Com o fim da guerra e o desemprego, ele abandonou a costa e entrou para a pirataria. <br> <strong>A Jornada nas Caraíbas Em 1715</strong> <br> durante uma de suas missões, ele entrou em confronto com um Assassino renegado. Ao pegar as vestes e o contrato do morto, Edward acabou se infiltrando sem querer na ordem. <br> Inicialmente, ele estava interessado apenas em dinheiro e em um local lendário chamado "Observatório". Ao longo de sua trajetória, ele testemunhou a ascensão e a queda da República Pirata e perdeu a maioria de seus companheiros, o que o fez mudar de perspectiva sobre a vida.</p>
+        </div>
+    </div>
+
+    <div class="story-box" id="story-thatch">
         <img src="https://placehold.co/260x340/1a1a2e/white?text=Edward" alt="Edward Kenway">
         <div>
             <h2>Edward Kenway</h2>
@@ -121,6 +129,43 @@
         </div>
     </div>
 
+    <div class="story-box" id="story-kidd">
+        <img src="https://placehold.co/260x340/1a1a2e/white?text=Edward" alt="Edward Kenway">
+        <div>
+            <h2>Edward Kenway</h2>
+            <p>Edward Kenway foi um corsário galês que se tornou um dos mais temidos piratas do Caribe, e mais tarde membro da Irmandade dos Assassinos. Sua busca por fortuna o levou a se envolver em uma guerra secreta entre Assassinos e Templários.</p>
+        </div>
+    </div>
+
+    <div class="story-box" id="story-adewale">
+        <img src="https://placehold.co/260x340/1a1a2e/white?text=Edward" alt="Edward Kenway">
+        <div>
+            <h2>Edward Kenway</h2>
+            <p>Edward Kenway foi um corsário galês que se tornou um dos mais temidos piratas do Caribe, e mais tarde membro da Irmandade dos Assassinos. Sua busca por fortuna o levou a se envolver em uma guerra secreta entre Assassinos e Templários.</p>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="division">
+        <div class="text">
+            <h1>VOLTE PARA OS MARES E CONQUISTE O CARIBE</h1>
+            <button><a href="#COMPRAR">subir a bordo</a></button>
+        </div>
+    </section>
+
+    <section class="comparasion">
+        <div class="text">
+
+        </div>
+        <div>
+            <div>
+                <h1>Personagem</h1>
+            </div>
+            <div>
+                <h1>Ambientação</h1>
+            </div>
+        </div>
     </section>
 
     <script src="index.js"></script>
