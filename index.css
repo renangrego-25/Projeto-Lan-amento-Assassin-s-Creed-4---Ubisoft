@@ -587,7 +587,7 @@ header ul nav li a:hover{
 .division{
     position: relative;
     min-height: 400px;
-    background-image: url("../images/backgrounddivision.png");
+    background-image: url("images/backgrounddivision.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -626,6 +626,44 @@ header ul nav li a:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    height: 700px;
-    margin-top: -70px;
+    height: 750px;
+    margin-top: -160px;
+    padding-top: 150px;
+    text-align: center;
 }
+
+.comparasion h1{
+    color: white;
+    font-family: 'alice';
+    text-transform: uppercase;
+}
+
+.comparasion p{
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+    font-family: 'noto sans';
+}
+
+.comparasion .cards{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.comparasion .cards .img-2{
+    display: none;
+}
+
+.comparasion .cards .imgs:hover{
+    .img-1{
+        display: none;
+    }
+    
+    .img-2{
+        display: block;
+    }
+}
+
